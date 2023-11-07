@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* hero */
+.hero {
+  height: 90vh;
+  position: relative;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero > div {
+  position: absolute;
+  left: 10vw;
+  top: 30vh;
+  background: rgba(128, 128, 128, 0.059);
+  width: 450px;
+  border-radius: 10px;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+}
+
+.down {
+  font-size: 5rem;
+  position: absolute;
+  left: 50% vw;
+  bottom: 100px;
+  color: rgb(0, 200, 255);
+  transform: rotate(90deg);
+  animation: goDown 1s infinite;
+}
+
+@keyframes goDown {
+  0% {
+    left: 50vw;
+    bottom: 110px;
+  }
+  100% {
+    left: 50vw;
+    bottom: 10px;
+  }
+}
